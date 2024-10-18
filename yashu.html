@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Booking System</title>
+    <link rel="stylesheet" href="yashu.css">
+    <link rel="stylesheet" href="yashu.js">
+</head>
+<body>
+        <header>
+            <h1>SLIET Mentorship Booking System</h1>
+        </header>
+    
+        <section id="faculty-profiles">
+            <h2>Faculty Mentors</h2>
+    
+            <!-- Faculty: Dr. Birmohan Singh -->
+            <div class="faculty-card" id="faculty1">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/5/6fc17d6735998f4f22a0e91fbf43b75c-bpfull.jpg" alt="Dr. Birmohan Singh" class="faculty-photo">
+                <h3>Dr. Birmohan Singh</h3>
+                <p>Educational Qualification: Ph.D., M.E.</p>
+                <p>Phone (O): +91-1672-253208</p>
+                <p>Email: birmohansingh@sliet.ac.in, birmohans@gmail.com</p>
+                <p>Available Slots:</p>
+                <ul id="faculty1-slots">
+                    <li>10:00 AM - 11:00 AM <button onclick="bookSlot('faculty1', '10:00 AM - 11:00 AM')">Book</button></li>
+                    <li>2:00 PM - 3:00 PM <button onclick="bookSlot('faculty1', '2:00 PM - 3:00 PM')">Book</button></li>
+                </ul>
+            </div>
+    
+            <!-- Faculty: Dr. Damanpreet Singh -->
+            <div class="faculty-card" id="faculty2">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/4/65783e7db0473-bpfull.jpg" alt="Dr. Damanpreet Singh" class="faculty-photo">
+                <h3>Dr. Damanpreet Singh</h3>
+                <p>Educational Qualification: Ph.D., M.Tech., B.Tech.</p>
+                <p>Phone (O): +91-1672-253210</p>
+                <p>Email: damanpreets@sliet.ac.in</p>
+                <p>Available Slots:</p>
+                <ul id="faculty2-slots">
+                    <li>11:00 AM - 12:00 PM <button onclick="bookSlot('faculty2', '11:00 AM - 12:00 PM')">Book</button></li>
+                    <li>3:00 PM - 4:00 PM <button onclick="bookSlot('faculty2', '3:00 PM - 4:00 PM')">Book</button></li>
+                </ul>
+            </div>
+    
+            <!-- Faculty: Dr. Major Singh Goraya -->
+            <div class="faculty-card" id="faculty3">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/35/5e69c6be20c7e-bpfull.jpg" alt="Dr. Major Singh Goraya" class="faculty-photo">
+                <h3>Dr. Major Singh Goraya</h3>
+                <p>Educational Qualification: Ph.D., M.Tech., B.Tech.</p>
+                <p>Phone (O): +91-1672-253212</p>
+                <p>Email: mjrsingh@yahoo.com</p>
+                <p>Available Slots:</p>
+                <ul id="faculty3-slots">
+                    <li>9:00 AM - 10:00 AM <button onclick="bookSlot('faculty3', '9:00 AM - 10:00 AM')">Book</button></li>
+                    <li>4:00 PM - 5:00 PM <button onclick="bookSlot('faculty3', '4:00 PM - 5:00 PM')">Book</button></li>
+                </ul>
+            </div>
+    
+            <!-- Faculty: Dr. Manoj Sachan -->
+            <div class="faculty-card" id="faculty4">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/6/605c66bd3e3bc-bpfull.jpg" alt="Dr. Manoj Sachan" class="faculty-photo">
+                <h3>Dr. Manoj Sachan</h3>
+                <p>Educational Qualification: B.Tech, M.E, Ph.D (Computer Science & Engineering)</p>
+                <p>Phone (O): +91-1672-253214</p>
+                <p>Email: manojsachan@sliet.ac.in, manojsachan@gmail.com</p>
+                <p>Available Slots:</p>
+                <ul id="faculty4-slots">
+                    <li>1:00 PM - 2:00 PM <button onclick="bookSlot('faculty4', '1:00 PM - 2:00 PM')">Book</button></li>
+                    <li>3:00 PM - 4:00 PM <button onclick="bookSlot('faculty4', '3:00 PM - 4:00 PM')">Book</button></li>
+                </ul>
+            </div>
+    
+            <!-- Faculty: Dr. Gurjinder Kaur -->
+            <div class="faculty-card" id="faculty5">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/14/5f2245e7a7f1bde5dee5bda48e09d411-bpfull.jpg" alt="Dr. Gurjinder Kaur" class="faculty-photo">
+                <h3>Dr. Gurjinder Kaur</h3>
+                <p>Educational Qualification: B.E., M.S., Ph.D.</p>
+                <p>Phone (O): +91-1672-253326</p>
+                <p>Email: gurjinder13@yahoo.com</p>
+                <p>Available Slots:</p>
+                <ul id="faculty5-slots">
+                    <li>11:00 AM - 12:00 PM <button onclick="bookSlot('faculty5', '11:00 AM - 12:00 PM')">Book</button></li>
+                    <li>2:00 PM - 3:00 PM <button onclick="bookSlot('faculty5', '2:00 PM - 3:00 PM')">Book</button></li>
+                </ul>
+            </div>
+    
+            <!-- Faculty: Dr. Amar Nath -->
+            <div class="faculty-card" id="faculty6">
+                <img src="http://sliet.ac.in/wp-content/uploads/avatars/467/66b8bb350cc46-bpfull.jpg" alt="Dr. Amar Nath" class="faculty-photo">
+                <h3>Dr. Amar Nath</h3>
+                <p>Educational Qualification: Ph.D., M.Tech., B.Tech.</p>
+                <p>Phone (O): +91-1672-253610</p>
+                <p>Email: amarnath@sliet.ac.in</p>
+                <p>Available Slots:</p>
+                <ul id="faculty6-slots">
+                    <li>10:00 AM - 11:00 AM <button onclick="bookSlot('faculty6', '10:00 AM - 11:00 AM')">Book</button></li>
+                    <li>1:00 PM - 2:00 PM <button onclick="bookSlot('faculty6', '1:00 PM - 2:00 PM')">Book</button></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="booking-status">
+            <h2>Booking Status</h2>
+            <p id="bookingMessage">No slots booked yet.</p>
+        </section>
+    
+        <section id="chat-system">
+            <h2>Simple Communication System</h2>
+            <div id="chat-box">
+                <div id="chat-messages"></div>
+            </div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
